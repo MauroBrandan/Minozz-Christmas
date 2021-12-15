@@ -1,0 +1,57 @@
+.Checkout {
+	grid-template-columns: 3fr 1fr;
+	grid-gap: 2rem;
+	grid-row-gap: 1.5em;
+	display: grid;
+	padding: 0 0 4em 0;
+}
+.Checkout-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0 0 0;
+}
+.Checkout-item .fas {
+	margin: 0 0 0 10px;
+	color: rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+.Checkout-item button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+.Checkout-element {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	border-bottom: 1px solid #eee;
+}
+.Checkout-element h4 {
+	margin: 0;
+}
+
+.Checkout-sidebar button {
+	background-image: linear-gradient(to right, #d31027 0%, #ea384d 51%, #d31027 100%);
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 0px;
+	outline: 0;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 300;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: #fff;
+}
+
+.Checkout-sidebar button:hover {
+	background-position: right center;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}

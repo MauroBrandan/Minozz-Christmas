@@ -1,0 +1,96 @@
+.Information {
+	grid-template-columns: 3fr 1fr;
+	grid-gap: 2rem;
+	grid-row-gap: 1.5em;
+	display: grid;
+	margin: 0 0 4em 0;
+}
+.Information-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.Information-sidebar {
+	margin: 10px 0 0 0;
+}
+.Information-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.Information-item .fas {
+	margin: 0 0 0 10px;
+	color: rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+.Information-item button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+.Information-element {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	border-bottom: 1px solid #eee;
+}
+.Information-element h4 {
+	margin: 0;
+}
+h2 {
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+h3 {
+	font-size: 18px;
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+input {
+	background-color: #fff;
+	background-image: none;
+	border-radius: 4px;
+	border: 1px solid #d9d9d9;
+	color: rgba(0, 0, 0, 0.75);
+	display: inline-block;
+	font-feature-settings: 'tnum';
+	font-size: 14px;
+	height: 32px;
+	line-height: 32px;
+	list-style: none;
+	margin: 0 0 8px 0;
+	outline: 0;
+	padding: 4px 12px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.Information-buttons {
+	margin: 10px 0 0;
+}
+.Information button {
+	width: 40%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 0px;
+	outline: 0;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 300;
+	color: #fff;
+}
+
+.Information-next {
+	background-image: linear-gradient(to right, #d31027 0%, #ea384d 51%, #d31027 100%);
+	transition: 0.5s;
+	background-size: 200% auto;
+}
+
+.Information-next:hover {
+	background-position: right center;
+	text-decoration: none;
+}
+
+.Information-back {
+	background-color: #3c484e;
+}
