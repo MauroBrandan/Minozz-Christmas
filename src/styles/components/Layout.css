@@ -9,12 +9,12 @@ body {
 
 a {
 	text-decoration: none;
-	color: #33b1ff;
 }
 
-.Main {
-	padding: 10px;
-	grid-template-columns: minmax(auto, 768px);
+#app {
 	display: grid;
 	justify-content: center;
+	grid-template-columns: minmax(auto, 768px);
+	grid-template-rows: 80px auto 80px;
+	height: 100vh;
 }

@@ -3,7 +3,7 @@ import React from 'react'
 export const Product = ({ product }) => {
 	const { image, title, price, description } = product
 	return (
-		<div className='Products-item'>
+		<article className='Products-item'>
 			<img src={image} alt={title} />
 			<div className='Products-item-info'>
 				<h2>
@@ -13,6 +13,6 @@ export const Product = ({ product }) => {
 				<p>{description}</p>
 			</div>
 			<button type='button'>Comprar</button>
-		</div>
+		</article>
 	)
 }

@@ -4,11 +4,9 @@ import '../styles/components/Information.css'
 
 export const Information = () => {
 	return (
-		<div className='Information'>
-			<div className='Information-content'>
-				<div className='Information-head'>
-					<h2>Información de contacto:</h2>
-				</div>
+		<section className='Information'>
+			<section className='Information-content'>
+				<h2>Información de contacto:</h2>
 				<div className='Information-form'>
 					<form action=''>
 						<input type='text' placeholder='Nombre completo' name='name' />
@@ -29,8 +27,8 @@ export const Information = () => {
 						<button className='Information-next'>Pagar</button>
 					</Link>
 				</div>
-			</div>
-			<div className='Information-sidebar'>
+			</section>
+			<aside className='Information-sidebar'>
 				<h3>Pedido:</h3>
 				<div className='Information-item'>
 					<div className='Information-element'>
@@ -38,7 +36,7 @@ export const Information = () => {
 						<span>$10</span>
 					</div>
 				</div>
-			</div>
-		</div>
+			</aside>
+		</section>
 	)
 }

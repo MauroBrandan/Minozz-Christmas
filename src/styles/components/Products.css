@@ -1,4 +1,4 @@
-.Products-items {
+.Products {
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 1.5rem;
 	grid-row-gap: 1.5em;
@@ -12,6 +12,7 @@
 	border-radius: 5px;
 	margin: 0 0 20px 0;
 	position: relative;
+	height: 350px;
 }
 
 .Products-item-info {
@@ -62,13 +63,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-	.Products-items {
+	.Products {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media only screen and (max-width: 425px) {
-	.Products-items {
+	.Products {
 		grid-template-columns: 1fr;
 	}
 }

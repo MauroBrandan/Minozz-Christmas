@@ -1,4 +1,9 @@
 .Footer {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
+	max-height: 80px;
+}
+
+.Footer a {
+	color: #d31027;
 }

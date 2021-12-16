@@ -55,3 +55,9 @@
 a {
 	text-decoration: none;
 }
+
+@media only screen and (max-width: 425px) {
+	.Checkout {
+		grid-template-columns: 1.5fr 1fr;
+	}
+}

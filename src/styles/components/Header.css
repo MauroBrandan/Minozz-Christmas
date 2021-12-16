@@ -1,6 +1,15 @@
 .Header {
 	display: flex;
 	justify-content: space-between;
+	max-height: 80px;
+}
+.Header-title {
+	color: inherit;
+	text-align: center;
+}
+.Header-title > h1,
+.Header-title > h6 {
+	margin: 0;
 }
 .Header-checkout {
 	display: flex;
