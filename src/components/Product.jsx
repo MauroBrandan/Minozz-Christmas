@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { AppContext } from '../context/AppContext'
 
 export const Product = ({ product }) => {
+	const { addToCart } = useContext(AppContext)
 	const { image, title, price, description } = product
+
 	return (
 		<article className='Products-item'>
 			<img src={image} alt={title} />
@@ -12,7 +15,9 @@ export const Product = ({ product }) => {
 				</h2>
 				<p>{description}</p>
 			</div>
-			<button type='button'>Comprar</button>
+			<button type='button' onClick={() => addToCart(product)}>
+				Comprar
+			</button>
 		</article>
 	)
 }
