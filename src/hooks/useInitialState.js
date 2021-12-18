@@ -2,19 +2,21 @@ import { useState } from 'react'
 import initialState from '../initialState'
 
 export const useInitialState = () => {
-	const [state, setstate] = useState(initialState)
+	const [state, setState] = useState(initialState)
 
 	const addToCart = (payload) => {
-		setstate({
+		setState({
 			...state,
 			cart: [...state.cart, payload],
 		})
 	}
 
 	const removeFromCart = (payload) => {
-		setstate({
+		const newCart = state.cart
+		newCart.splice(payload, 1)
+		setState({
 			...state,
-			cart: state.cart.filter((item) => item.id !== payload.id),
+			cart: newCart,
 		})
 	}
 
