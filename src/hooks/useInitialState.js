@@ -20,6 +20,13 @@ export const useInitialState = () => {
 		})
 	}
 
+	const clearCart = () => {
+		setState({
+			...state,
+			cart: [],
+		})
+	}
+
 	const addBuyer = (payload) => {
 		setState({
 			...state,
@@ -27,10 +34,19 @@ export const useInitialState = () => {
 		})
 	}
 
+	const addOrder = (payload) => {
+		setState({
+			...state,
+			orders: [...state.orders, payload],
+		})
+	}
+
 	return {
 		state,
 		addToCart,
 		removeFromCart,
+		clearCart,
 		addBuyer,
+		addOrder,
 	}
 }
