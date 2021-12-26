@@ -11,6 +11,9 @@
 	"author": "Mauro Brandan <maurobrandan.mb@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
+		"@babel/runtime": "^7.16.5",
+		"@react-google-maps/api": "^2.7.0",
+		"axios": "^0.24.0",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"react-paypal-button-v2": "^2.6.3",
@@ -18,10 +21,12 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.16.0",
+		"@babel/plugin-transform-runtime": "^7.16.5",
 		"@babel/preset-env": "^7.16.4",
 		"@babel/preset-react": "^7.16.0",
 		"babel-loader": "^8.2.3",
 		"css-loader": "^6.5.1",
+		"dotenv-webpack": "^7.0.3",
 		"html-loader": "^3.0.1",
 		"html-webpack-plugin": "^5.5.0",
 		"mini-css-extract-plugin": "^2.4.5",

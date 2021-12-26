@@ -17,7 +17,6 @@ export const Payment = () => {
 	}
 
 	const handlePaymentSuccess = (data) => {
-		console.log(data)
 		const newOrder = {
 			buyer,
 			product: cart,

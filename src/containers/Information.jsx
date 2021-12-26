@@ -28,9 +28,10 @@ export const Information = () => {
 						<input type='text' placeholder='Nombre completo' name='name' />
 						<input type='text' placeholder='Correo Electronico' name='email' />
 						<input type='text' placeholder='Direccion' name='address' />
-						<input type='text' placeholder='Ciudad' name='city' />
+						<input type='text' placeholder='Numero' name='number' />
 						<input type='text' placeholder='Pais' name='country' />
 						<input type='text' placeholder='Provincia' name='state' />
+						<input type='text' placeholder='Ciudad' name='city' />
 						<input type='text' placeholder='Codigo postal' name='cp' />
 						<input type='text' placeholder='Telefono' name='phone' />
 					</form>
