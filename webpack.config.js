@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const DotenvWebpackPlugin = require('dotenv-webpack')
@@ -49,7 +50,18 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: 'assets/[name].css',
 		}),
-		new DotenvWebpackPlugin(),
+		new DotenvWebpackPlugin({
+			path: './.env',
+			safe: true,
+			systemvars: true,
+			defaults: false,
+		}),
+		new webpack.DefinePlugin({
+			'process.env': {
+				POSITION_STACK_API_KEY: JSON.stringify(process.env.POSITION_STACK_API_KEY),
+				GOOGLE_MAPS_API_KEY: JSON.stringify(process.env.GOOGLE_MAPS_API_KEY),
+			},
+		}),
 	],
 	devServer: {
 		static: path.join(__dirname, 'dist'),
