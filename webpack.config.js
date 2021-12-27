@@ -52,8 +52,8 @@ module.exports = {
 		}),
 		new webpack.DefinePlugin({
 			'process.env': {
-				POSITION_STACK_API_KEY: JSON.stringify(process.env.POSITION_STACK_API_KEY),
-				GOOGLE_MAPS_API_KEY: JSON.stringify(process.env.GOOGLE_MAPS_API_KEY),
+				'POSITION_STACK_API_KEY': JSON.stringify(process.env.POSITION_STACK_API_KEY),
+				'GOOGLE_MAPS_API_KEY': JSON.stringify(process.env.GOOGLE_MAPS_API_KEY),
 			},
 		}),
 	],
