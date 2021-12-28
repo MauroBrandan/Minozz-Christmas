@@ -8,7 +8,7 @@ export const Success = () => {
 	const { state } = useContext(AppContext)
 	const { buyer } = state
 	const name = buyer[0] ? buyer[0].name : 'Timoteo'
-	const location = buyer[0] ? useGetLocation(buyer[0]) : false
+	const location = buyer[0] ? useGetLocation() : false
 	return (
 		<div className='Success'>
 			<div className='Success-content'>
